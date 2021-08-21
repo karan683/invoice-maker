@@ -1,1 +1,1 @@
-Invoice maker web app
+Invoice maker web app with nextjs
