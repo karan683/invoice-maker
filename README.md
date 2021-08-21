@@ -1,1 +1,1 @@
-Invoice maker
+Invoice maker web app
