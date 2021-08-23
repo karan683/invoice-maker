@@ -7,25 +7,25 @@ export const NavLinks = (props) => {
     : "flex flex-col justify-center items-center";
   return (
     <ul className={`w-full h-full list-none ${ulClasses}`}>
-      <li className="m-4 text-xl font-bold">
-        <a className="text-blue-900 hover:text-purple-900">
+      <li className="m-3 text-xl font-bold">
+        <span className="p-2 text-blue-900 hover:bg-blue-200 rounded">
           <Link href="/signup">SIGN UP</Link>
-        </a>
+        </span>
       </li>
-      <li className="m-4 text-xl font-bold">
-        <a className="text-blue-900 hover:text-purple-900">
+      <li className="m-3 text-xl font-bold">
+        <span className="p-2 text-blue-900 hover:bg-blue-200 rounded">
           <Link href="/login">LOGIN</Link>
-        </a>
+        </span>
       </li>
-      <li className="m-4 text-xl font-bold">
-        <a className="text-blue-900 hover:text-purple-900">
-          <Link href="/mydashboard">DASHBOARD</Link>
-        </a>
+      <li className="m-3 text-xl font-bold">
+        <span className="p-2 text-blue-900 hover:bg-blue-200 rounded">
+          <Link href="/dashboard">DASHBOARD</Link>
+        </span>
       </li>
-      <li className="m-4 text-xl font-bold">
-        <a className="text-blue-900 hover:text-purple-900">
+      <li className="m-3 text-xl font-bold">
+        <span className="p-2 text-blue-900 hover:bg-blue-200 rounded">
           <Link href="/logout">LOGOUT</Link>
-        </a>
+        </span>
       </li>
     </ul>
   );
