@@ -12,7 +12,7 @@ const SideDrawer = props => {
     },[])
     const classes = props.show === true ? "transform translate-x-0" : "transform -translate-x-full";
   return mounted ? ReactDOM.createPortal(
-    <div className={`h-screen w-3/4 fixed top-0 left-0 bg-white transition-all duration-300 ${classes} shadow-xl`} onClick={props.onClick}>{props.children}</div>,document.getElementById('sideDrawer-hook')
+    <div className={`h-screen w-3/4 fixed top-0 left-0 bg-white transition-all duration-400 ${classes} shadow-xl`} onClick={props.onClick}>{props.children}</div>,document.getElementById('sideDrawer-hook')
   ) : null
 };
 

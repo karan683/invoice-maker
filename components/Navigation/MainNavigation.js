@@ -34,9 +34,9 @@ export const MainNavigation = () => {
           <span className="block w-12 h-1 bg-black" />
         </button>
         <h1 className="text-black text-2xl ml-8 font-extrabold">
-          <a className="hover:text-purple-900">
+          <span className="hover:text-purple-900">
           <Link href="/">INVOICE MAKER</Link>
-          </a>
+          </span>
         </h1>
         <nav className="hidden md:block">
           <NavLinks desktop/>

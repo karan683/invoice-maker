@@ -9,11 +9,6 @@ export const NavLinks = (props) => {
     <ul className={`w-full h-full list-none ${ulClasses}`}>
       <li className="m-3 text-xl font-bold">
         <span className="p-2 text-blue-900 hover:bg-blue-200 rounded">
-          <Link href="/signup">SIGN UP</Link>
-        </span>
-      </li>
-      <li className="m-3 text-xl font-bold">
-        <span className="p-2 text-blue-900 hover:bg-blue-200 rounded">
           <Link href="/login">LOGIN</Link>
         </span>
       </li>
