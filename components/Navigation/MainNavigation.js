@@ -34,7 +34,10 @@ export const MainNavigation = () => {
           <span className="block w-12 h-1 bg-black" />
         </button>
         <h1 className="text-black text-2xl ml-8 font-extrabold">
-          <span className="hover:text-purple-900">
+          <span className="hover:text-purple-900 flex items-center">
+            <div className="h-10">
+              <img src={"/pdf.png"} alt="icon" className="h-full" />
+            </div>
           <Link href="/">INVOICE MAKER</Link>
           </span>
         </h1>
