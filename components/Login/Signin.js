@@ -30,7 +30,7 @@ export const Signin = (props) => {
                                 <input type="password" className=" text-gray-700 w-full h-10 rounded-md p-1 pl-8 shadow-md focus:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Password" required={true}></input>
                             </div>
                             <div className="flex justify-center mt-2">
-                                <button className="mt-6 bg-gradient-to-r from-green-500 to-indigo-500 text-white p-1 pl-2 pr-2 rounded-lg hover:bg-gradient-to-r hover:from-green-400 hover:to-indigo-400">Sign In</button>
+                                <button className="mt-6 bg-gradient-to-r from-green-500 to-indigo-500 text-white p-1 pl-2 pr-2 rounded-lg hover:bg-gradient-to-r hover:from-green-400 hover:to-indigo-400 uppercase">Sign In</button>
                             </div>
                         </form>
 
