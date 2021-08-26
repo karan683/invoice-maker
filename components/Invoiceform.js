@@ -189,9 +189,10 @@ const Invoiceform = () => {
 
 
 
-            <div className="mt-5">
+            <div className="mt-5 flex flex-col">
                 <button className="bg-purple-400 sticky top-5 text-white  font-bold text-lg rounded mb-5 px-14 py-2 hover:bg-purple-500">Download</button>
-                <button className="bg-purple-400 sticky top-20 text-white  font-bold text-lg rounded mb-5 px-16 py-2 hover:bg-purple-500">Preview</button>
+                <button className="bg-purple-400 sticky top-20 text-white  font-bold text-lg rounded mb-5 px-14 py-2 hover:bg-purple-500">Send Mail</button>
+                <button className="bg-purple-400 sticky top-36 text-white  font-bold text-lg rounded mb-5 px-16 py-2 hover:bg-purple-500">Preview</button>
             </div>
         
 
