@@ -16,7 +16,7 @@ export const Signup = (props) => {
                 ">
                     <div>
                         <figure className="hidden md:block">
-                            <img src="Signup.svg" alt="Signup image" className="w-3/4 h-80 mt-5 ml-12"></img>
+                            <img src="/Signup.svg" alt="Signup image" className="w-3/4 h-80 mt-5 ml-12"></img>
                         </figure>
                     </div>
                     <div div className="w-72 ml-3 mr-3 xl:w-96 lg:mr-5 lg:ml-5 md:mr-10">
