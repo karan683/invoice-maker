@@ -19,7 +19,7 @@ export const Signin = (props) => {
                         </figure>
                     </div>
                     <div className="w-72 xl:w-96 lg:mr-5 ml-5 mr-5 md:mr-10">
-                        <h2 className="font-black text-2xl mt-5 mb-8 text-indigo-700 text-center">Sign In</h2>
+                        <h2 className="font-black text-2xl mt-5 mb-8 text-indigo-700 text-center">LOGIN</h2>
                         <form>
                             <div className="relative">
                                 <MdEmail className="absolute left-0 top-3 ml-1" />
@@ -30,16 +30,16 @@ export const Signin = (props) => {
                                 <input type="password" className=" text-gray-700 w-full h-10 rounded-md p-1 pl-8 shadow-md focus:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="Password" required={true}></input>
                             </div>
                             <div className="flex justify-center mt-2">
-                                <button className="mt-6 bg-gradient-to-r from-green-500 to-indigo-500 text-white p-1 pl-2 pr-2 rounded-lg hover:bg-gradient-to-r hover:from-green-400 hover:to-indigo-400 uppercase">Sign In</button>
+                                <button className="mt-6 bg-gradient-to-r from-green-500 to-indigo-500 text-white p-1 pl-2 pr-2 rounded-lg hover:bg-gradient-to-r hover:from-green-400 hover:to-indigo-400 uppercase">LOGIN</button>
                             </div>
                         </form>
 
-                        <div className="mt-8 ">
-                            <h3 className="text-gray-500 font-semibold mb-2">Or login with</h3>
+                        <div className="mt-12 flex flex-col items-center ">
+                            <h3 className="text-gray-500 font-semibold mb-2 text-blue-700">OR LOGIN WITH</h3>
                             <a href="#" className="text-2xl"><FcGoogle /></a>
                         </div>
 
-                        <div className="flex justify-center">
+                        <div className="flex justify-center mt-4">
                             <button href="#" onClick={createAccount} className="mx-auto mt-5 text-indigo-500 hover:text-indigo-800">Create an account</button>
                         </div>
                     </div>

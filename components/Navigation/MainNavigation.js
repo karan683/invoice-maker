@@ -26,14 +26,15 @@ export const MainNavigation = () => {
         </SideDrawer>
       <MainHeader>
         <button
-          className="w-12 h-12 flex flex-col justify-around cursor-pointer bg-transparent ml-7 md:hidden"
+          className="w-8 h-12 flex flex-col justify-around cursor-pointer bg-transparent ml-5 md:hidden"
           onClick={openDrawerHandler}
         >
-          <span className="block w-12 h-1 bg-black" />
-          <span className="block w-12 h-1 bg-black" />
-          <span className="block w-12 h-1 bg-black" />
+          <span className="text-2xl">
+          ☰
+          </span>
+          
         </button>
-        <h1 className="text-black text-2xl ml-8 font-extrabold">
+        <h1 className="text-black text-xl ml-2 font-extrabold">
           <span className="hover:text-purple-900 flex items-center">
             <div className="h-10">
               <img src={"/pdf.png"} alt="icon" className="h-full" />
