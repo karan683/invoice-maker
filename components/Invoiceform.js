@@ -71,7 +71,7 @@ const Invoiceform = () => {
     }
 
     const pdfkitmaker = () => {
-        axios.post('http://localhost:3000/api/pdfmake', {
+        axios.post('/api/pdfmake', {
             from,
             to,
             date,
