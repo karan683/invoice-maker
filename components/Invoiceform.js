@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import Product from './Product'
 import { nanoid } from 'nanoid'
 import Image from 'next/image'
-
+import axios from 'axios';
+import download from 'downloadjs'
 
 const Invoiceform = () => {
 
@@ -17,7 +18,6 @@ const Invoiceform = () => {
 
     const [totaldue, settotaldue] = useState(totalamount);
 
-    
     
 
 
@@ -66,6 +66,29 @@ const Invoiceform = () => {
         };
         reader.readAsDataURL(e.target.files[0]);
         setImage(e.target.files[0]);
+        console.log(Image)
+
+    }
+
+    const pdfkitmaker = () => {
+        axios.post('http://localhost:3000/api/pdfmake', {
+            from,
+            to,
+            date,
+            invoicenum,
+            note,
+            totalamount,
+            finaldiscount,
+            finaltax,
+            finalshipping,
+            totaldue,
+            products
+        },{ responseType: 'blob' }).then((response) => {
+            // console.log(response)
+            download(response.data, "invoice.pdf", "application/pdf");
+        }).catch((err) => {
+            console.log(err)
+        })
 
     }
 
@@ -190,7 +213,7 @@ const Invoiceform = () => {
 
 
             <div className="mt-5 flex flex-col">
-                <button className="bg-purple-400 sticky top-5 text-white  font-bold text-lg rounded mb-5 px-14 py-2 hover:bg-purple-500">Download</button>
+                <button className="bg-purple-400 sticky top-5 text-white  font-bold text-lg rounded mb-5 px-14 py-2 hover:bg-purple-500" onClick={pdfkitmaker}>Download</button>
                 <button className="bg-purple-400 sticky top-20 text-white  font-bold text-lg rounded mb-5 px-14 py-2 hover:bg-purple-500">Send Mail</button>
                 <button className="bg-purple-400 sticky top-36 text-white  font-bold text-lg rounded mb-5 px-16 py-2 hover:bg-purple-500">Preview</button>
             </div>
