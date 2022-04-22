@@ -18,7 +18,8 @@ export const NavLinks = (props) => {
           <Link href="/login">LOGIN</Link>
         </a>
       </li>
-      <li className="m-3 text-xl font-bold">
+      
+      {/*<li className="m-3 text-xl font-bold">
         <a className={`p-2 text-blue-900 hover:bg-blue-200 rounded active:bg-blue-200 ${router.asPath === '/dashboard' ? 'bg-blue-200' : ''}`}>
           <Link href="/dashboard">DASHBOARD</Link>
         </a>
@@ -27,7 +28,7 @@ export const NavLinks = (props) => {
         <a className="p-2 text-blue-900 hover:bg-blue-200 rounded">
           <Link href="/logout">LOGOUT</Link>
         </a>
-      </li>
+      </li>*/}
     </ul>
   );
 };
